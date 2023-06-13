@@ -16,6 +16,11 @@ import javax.servlet.ServletRegistration;
 import javax.servlet.SessionTrackingMode;
 import java.util.Collections;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Value("${cookie.secure}")

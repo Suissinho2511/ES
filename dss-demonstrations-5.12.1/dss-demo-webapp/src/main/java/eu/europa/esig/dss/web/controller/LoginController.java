@@ -28,7 +28,7 @@ public class LoginController {
         System.out.println(login.getUsername());
 
         LoginForm l = new LoginForm();
-        l.setPassword(login.getUsername());
+        l.setPassword(login.getPassword());
         l.setUsername(login.getUsername());
 
         System.out.println("POST");
