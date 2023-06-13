@@ -1,0 +1,4 @@
+--add-modules
+jdk.crypto.cryptoki
+--add-exports
+jdk.crypto.cryptoki/sun.security.pkcs11.wrapper=ALL-UNNAMED
