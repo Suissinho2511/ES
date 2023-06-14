@@ -34,11 +34,8 @@ public class LoginController {
         User user = userRepository.findByUsername(username);
         if (user != null && password.equals(user.getPassword())) {
             session.setAttribute("username", username); // Guarda o nome do usuário na sessão
-            LoginForm l = new LoginForm();
-            l.setPassword(login.getUsername());
-            l.setUsername(login.getUsername());
             System.out.println("POST");
-            model.addAttribute("loginForm", l);
+            model.addAttribute("loginForm", login);
             return "redirect:/user-area"; // Redireciona para a área do usuário após o login bem-sucedido
         } else {
             return "login"; // Retorna para a página de login em caso de falha no login
