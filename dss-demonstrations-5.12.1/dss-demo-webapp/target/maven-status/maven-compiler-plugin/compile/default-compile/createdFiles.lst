@@ -48,8 +48,8 @@ eu\europa\esig\dss\web\controller\DigestController.class
 eu\europa\esig\dss\web\model\CounterSignatureForm.class
 eu\europa\esig\dss\web\controller\DataController$1.class
 eu\europa\esig\dss\web\controller\HomeController.class
+eu\europa\esig\dss\web\dao\UserRepository.class
 eu\europa\esig\dss\web\model\SignatureJAdESForm.class
-eu\europa\esig\dss\web\service\UserService.class
 wsdlservice\ValidateOtp.class
 eu\europa\esig\dss\web\config\WebSecurityConfiguration$1.class
 eu\europa\esig\dss\web\controller\LoginController.class
@@ -78,7 +78,6 @@ eu\europa\esig\dss\web\controller\ContainerMergeController.class
 eu\europa\esig\dss\web\controller\SignatureStandaloneController.class
 eu\europa\esig\dss\web\controller\TimestampController.class
 eu\europa\esig\dss\web\editor\EnumPropertyEditor.class
-eu\europa\esig\dss\web\repository\UserRepository.class
 eu\europa\esig\dss\web\model\ContainerMergeForm.class
 eu\europa\esig\dss\web\controller\TrustedListController.class
 wsdlservice\MultipleSignRequest.class

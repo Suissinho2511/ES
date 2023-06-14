@@ -1,6 +1,5 @@
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\CMDSignatureDocumentForm.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\wsdlservice\GetCertificateWithPin.java
-C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\service\UserService.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\ContainerDocumentForm.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\controller\ReplayDiagController.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\job\TSLLoaderJob.java
@@ -9,7 +8,6 @@ C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-d
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\wsdlservice\ObjectFactory.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\controller\CertificateValidationController.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\CounterSignatureForm.java
-C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\repository\UserRepository.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\CertificateDTO.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\config\CXFConfig.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\OriginalFile.java
@@ -33,6 +31,7 @@ C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-d
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\editor\ASiCContainerTypePropertyEditor.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\SignatureDocumentForm.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\SignatureJAdESForm.java
+C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\dao\UserRepository.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\config\DSSBeanConfig.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\SignatureDigestForm.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\service\XSLTService.java
