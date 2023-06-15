@@ -48,7 +48,6 @@ eu\europa\esig\dss\web\controller\DigestController.class
 eu\europa\esig\dss\web\model\CounterSignatureForm.class
 eu\europa\esig\dss\web\controller\DataController$1.class
 eu\europa\esig\dss\web\controller\HomeController.class
-eu\europa\esig\dss\web\dao\UserRepository.class
 eu\europa\esig\dss\web\model\SignatureJAdESForm.class
 wsdlservice\ValidateOtp.class
 eu\europa\esig\dss\web\config\WebSecurityConfiguration$1.class
@@ -80,6 +79,7 @@ eu\europa\esig\dss\web\controller\TimestampController.class
 eu\europa\esig\dss\web\editor\EnumPropertyEditor.class
 eu\europa\esig\dss\web\model\ContainerMergeForm.class
 eu\europa\esig\dss\web\controller\TrustedListController.class
+eu\europa\esig\dss\DB\ConnectionPool.class
 wsdlservice\MultipleSignRequest.class
 eu\europa\esig\dss\web\model\CertificateDTO.class
 eu\europa\esig\dss\web\controller\SignatureJAdESController.class
@@ -98,12 +98,12 @@ eu\europa\esig\dss\web\model\DataToSignParams.class
 wsdlservice\CCMovelSign.class
 wsdlservice\GetCertificateResponse.class
 eu\europa\esig\dss\web\service\KeystoreService.class
+eu\europa\esig\dss\DB\UserDAO.class
 eu\europa\esig\dss\web\controller\QwacValidationController.class
 wsdlservice\HashStructure.class
 eu\europa\esig\dss\web\SpringSecurityApplicationInitializer.class
 wsdlservice\package-info.class
 eu\europa\esig\dss\web\model\OriginalFile.class
-eu\europa\esig\dss\web\model\User.class
 wsdlservice\ValidateOtpResponse.class
 eu\europa\esig\dss\web\SpringSecurityApplicationInitializer$AcceptAllFilesMultipartFilter.class
 wsdlservice\CCMovelSignature.class

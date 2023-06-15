@@ -13,6 +13,7 @@ C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-d
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\OriginalFile.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\wsdlservice\GetCertificate.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\controller\SignatureController.java
+C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\DB\UserDAO.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\AppInitializer.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\config\WebSecurityConfiguration.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\controller\SignatureMultipleDocumentsController.java
@@ -20,6 +21,7 @@ C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-d
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\service\KeystoreService.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\ReplayDiagForm.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\wsdlservice\GetCertificateResponse.java
+C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\DB\ConnectionPool.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\controller\UserAreaController.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\TokenDTO.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\CertificateValidationForm.java
@@ -31,7 +33,6 @@ C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-d
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\editor\ASiCContainerTypePropertyEditor.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\SignatureDocumentForm.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\SignatureJAdESForm.java
-C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\dao\UserRepository.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\config\DSSBeanConfig.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\SignatureDigestForm.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\service\XSLTService.java
@@ -53,7 +54,6 @@ C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-d
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\controller\GlobalExceptionHandler.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\ValidationForm.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\editor\EnumPropertyEditor.java
-C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\model\User.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\validation\EtsiNamespaceValidationReportFacade.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\controller\DigestController.java
 C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-demo-webapp\src\main\java\eu\europa\esig\dss\web\controller\ValidationController.java
