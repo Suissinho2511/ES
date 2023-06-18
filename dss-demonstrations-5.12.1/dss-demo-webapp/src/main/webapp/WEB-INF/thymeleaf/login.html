@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout.html}" th:with="currentPage=#{label.login}">
+  <body>
+    <div layout:fragment="content">
+      <p th:text="${session.message}"></p>
+      <div class="d-flex justify-content-center align-items-center" style="height: auto;">
+        <form method="post" th:action="@{/login}" th:object="${LoginForm}" style="max-width: 400px; width: 100%;">
+          <!-- Add this div to display the message, make it red and bold -->
+          <div th:if="${errorMessage}" class="alert alert-danger text-center" th:text="${errorMessage}"></div>
+          <div class="form-group">
+            <label for="Username" th:text="#{label.to.username}"></label>
+            <input name="Username" id="Username" type="text" class="form-control" th:value="${username}" placeholder="Username" pattern="[A-Za-z]+" />
+          </div>
+          <div class="form-group">
+            <label for="Password" th:text="#{label.to.password}"></label>
+            <input name="Password" id="Password" type="password" class="form-control" th:value="${password}" placeholder="Password" />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block" id="submit-button" th:text="#{label.submit}"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

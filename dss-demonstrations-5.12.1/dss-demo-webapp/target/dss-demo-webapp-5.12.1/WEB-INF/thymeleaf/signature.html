@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout.html}" th:with="currentPage=#{label.signADocument}">
+	<body>		
+		<div layout:fragment="content">
+		
+			<div th:replace="fragment/disclaimer-mock-tsp::mock-tsp-warn"></div>
+
+            <form method="post" enctype="multipart/form-data" th:action="@{/sign-a-document}" th:object="${signatureDocumentForm}">
+
+                <input type="hidden" id="process" value="SIGNATURE" />
+
+                <div th:replace="fragment/fields::field-document-to-sign"></div>
+
+                <div th:replace="fragment/fields::field-container-type-form"></div>
+
+                <div th:replace="fragment/fields::field-signature-form"></div>
+
+                <div th:replace="fragment/fields::field-signature-packaging"></div>
+
+                <div th:replace="fragment/fields::field-signature-level"></div>
+
+                <div th:replace="fragment/fields::field-digest-algo"></div>
+
+                <div th:replace="fragment/fields::field-sign-expired"></div>
+                
+                <div th:replace="fragment/fields::field-content-timestamp"></div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Select Method:</label>
+                    <div class="col-sm-9">
+                        <select id="method" name="method" class="form-control" onchange="togglePrivateKeyFields()">
+                            <option value="nexu">Nexu</option>
+                            <option value="private_key">Private Key</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="privateKeyFields" style="display: none;">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Private Key:</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="privateKey" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Certificate:</label>
+                        <div class="col-sm-9">
+                            <input type="file" name="certificate" class="form-control-file" />
+                        </div>
+                    </div>
+                </div>
+
+                <div th:replace="fragment/nexu::nexu-alert"></div>
+
+                <div class="form-group row">
+                    <div class="offset-sm-3 col-sm-9">
+                        <button type="submit" class="btn btn-primary" id="submit-button" th:text="#{label.submit}" disabled="disabled"></button>
+                        <button type="reset" class="btn btn-secondary" th:text="#{label.clear}"></button>
+                    </div>
+                </div>
+
+            </form>
+		</div>
+		<div layout:fragment="scripts">
+            <script type="text/javascript" th:src="@{/scripts/jsDigestAlgorithm.js}"></script>
+            <script type="text/javascript" th:src="@{/scripts/jsSignatureLevel.js}"></script>
+            <script type="text/javascript" th:src="@{/js/nexu-deploy.js}"></script>
+            <script type="text/javascript">
+				$('[data-toggle="tooltip"]').tooltip();
+
+                function togglePrivateKeyFields() {
+                    var method = document.getElementById("method").value;
+                    var privateKeyFields = document.getElementById("privateKeyFields");
+                    if (method === "private_key") {
+                        privateKeyFields.style.display = "block";
+                    } else {
+                        privateKeyFields.style.display = "none";
+                    }
+                }
+            </script>
+		</div>
+	</body>
+</html>

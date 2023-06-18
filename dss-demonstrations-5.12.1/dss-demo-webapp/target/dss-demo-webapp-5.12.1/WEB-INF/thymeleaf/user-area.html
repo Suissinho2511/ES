@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout.html}" th:with="currentPage=#{label.user.area}">
+  <body>
+    <div layout:fragment="content">
+      <div class="d-flex justify-content-center align-items-center" style="height: auto;">
+        <form method="post" th:action="@{/user-area}" style="max-width: 400px; width: 100%;">
+          <!-- Add this div to display the message, make it red and bold -->
+          <div th:if="${errorMessage}" class="alert alert-danger text-center" th:text="${errorMessage}"></div>
+          <div class="form-group">
+            <label for="number" th:text="#{label.to.change.number}"></label>
+            <input type="text" name="number" id="number" class="form-control" th:value="${number}" placeholder="Phone Number" />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block" id="submit-button" th:text="#{label.submit}"></button>
+          </div>
+          <div class="form-group">
+            <button id="btnClear" class="btn btn-secondary btn-block" th:text="#{label.clear}"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div layout:fragment="scripts">
+      <script type="text/javascript">
+        $("#btnClear").on("click", function(e){
+          e.preventDefault();
+          $("form")[0].reset();
+        });
+      </script>
+    </div>
+  </body>
+</html>

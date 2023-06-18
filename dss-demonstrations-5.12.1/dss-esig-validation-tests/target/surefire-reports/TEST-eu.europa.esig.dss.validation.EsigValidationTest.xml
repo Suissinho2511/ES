@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="eu.europa.esig.dss.validation.EsigValidationTest" time="8.98" tests="92" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-esig-validation-tests\target\test-classes;C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-esig-validation-tests\target\classes;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-tsl-validation\5.12.1\dss-tsl-validation-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\specs-trusted-list\5.12.1\specs-trusted-list-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\specs-xmldsig\5.12.1\specs-xmldsig-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-jaxb-common\5.12.1\dss-jaxb-common-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-alert\5.12.1\dss-alert-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\specs-xades\5.12.1\specs-xades-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-jaxb-parsers\5.12.1\dss-jaxb-parsers-5.12.1.jar;C:\Users\vasco\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.8\jaxb-runtime-2.3.8.jar;C:\Users\vasco\.m2\repository\org\glassfish\jaxb\txw2\2.3.8\txw2-2.3.8.jar;C:\Users\vasco\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\vasco\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-xades\5.12.1\dss-xades-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-test\5.12.1\dss-test-5.12.1-tests.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-document\5.12.1\dss-document-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-spi\5.12.1\dss-spi-5.12.1.jar;C:\Users\vasco\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.72\bcpkix-jdk18on-1.72.jar;C:\Users\vasco\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.72\bcutil-jdk18on-1.72.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\validation-policy\5.12.1\validation-policy-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-policy-jaxb\5.12.1\dss-policy-jaxb-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-diagnostic-jaxb\5.12.1\dss-diagnostic-jaxb-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-simple-report-jaxb\5.12.1\dss-simple-report-jaxb-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-simple-certificate-report-jaxb\5.12.1\dss-simple-certificate-report-jaxb-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-detailed-report-jaxb\5.12.1\dss-detailed-report-jaxb-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\specs-validation-report\5.12.1\specs-validation-report-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-i18n\5.12.1\dss-i18n-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-token\5.12.1\dss-token-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-model\5.12.1\dss-model-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-enumerations\5.12.1\dss-enumerations-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-service\5.12.1\dss-service-5.12.1.jar;C:\Users\vasco\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\vasco\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\vasco\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\vasco\.m2\repository\org\apache\santuario\xmlsec\2.3.3\xmlsec-2.3.3.jar;C:\Users\vasco\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\vasco\.m2\repository\com\fasterxml\woodstox\woodstox-core\6.5.0\woodstox-core-6.5.0.jar;C:\Users\vasco\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.1\stax2-api-4.2.1.jar;C:\Users\vasco\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\vasco\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.7\jcl-over-slf4j-2.0.7.jar;C:\Users\vasco\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\vasco\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.3\junit-platform-launcher-1.9.3.jar;C:\Users\vasco\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\vasco\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\vasco\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\vasco\.m2\repository\org\mockito\mockito-core\4.11.0\mockito-core-4.11.0.jar;C:\Users\vasco\.m2\repository\net\bytebuddy\byte-buddy\1.12.19\byte-buddy-1.12.19.jar;C:\Users\vasco\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar;C:\Users\vasco\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\vasco\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.15.1\jackson-module-jaxb-annotations-2.15.1.jar;C:\Users\vasco\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.1\jackson-annotations-2.15.1.jar;C:\Users\vasco\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.1\jackson-core-2.15.1.jar;C:\Users\vasco\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.1\jackson-databind-2.15.1.jar;C:\Users\vasco\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-utils-apache-commons\5.12.1\dss-utils-apache-commons-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-utils\5.12.1\dss-utils-5.12.1.jar;C:\Users\vasco\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\vasco\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\vasco\.m2\repository\commons-io\commons-io\2.12.0\commons-io-2.12.0.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-crl-parser-stream\5.12.1\dss-crl-parser-stream-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-crl-parser\5.12.1\dss-crl-parser-5.12.1.jar;C:\Users\vasco\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.72\bcprov-jdk18on-1.72.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\fop-core\2.8\fop-core-2.8.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-anim\1.16\batik-anim-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-css\1.16\batik-css-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-dom\1.16\batik-dom-1.16.jar;C:\Users\vasco\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-ext\1.16\batik-ext-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-parser\1.16\batik-parser-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.16\batik-shared-resources-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.16\batik-svg-dom-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-util\1.16\batik-util-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-constants\1.16\batik-constants-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.16\batik-i18n-1.16.jar;C:\Users\vasco\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.16\batik-awt-util-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.16\batik-bridge-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-script\1.16\batik-script-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-xml\1.16\batik-xml-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-extension\1.16\batik-extension-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.16\batik-gvt-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.16\batik-transcoder-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.16\batik-svggen-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\fop-events\2.8\fop-events-2.8.jar;C:\Users\vasco\.m2\repository\com\thoughtworks\qdox\qdox\1.12\qdox-1.12.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\fop-util\2.8\fop-util-2.8.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.8\xmlgraphics-commons-2.8.jar;C:\Users\vasco\.m2\repository\ch\qos\logback\logback-classic\1.3.7\logback-classic-1.3.7.jar;C:\Users\vasco\.m2\repository\ch\qos\logback\logback-core\1.3.7\logback-core-1.3.7.jar;C:\Users\vasco\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\vasco\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\vasco\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\vasco\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\vasco\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\vasco\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\vasco\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Lisbon"/>
+    <property name="user.country.format" value="PT"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
+    <property name="sun.java.command" value="C:\Users\vasco\AppData\Local\Temp\surefire13711499927534971473\surefirebooter-20230618174310882_18.jar C:\Users\vasco\AppData\Local\Temp\surefire13711499927534971473 2023-06-18T17-41-44_130-jvmRun1 surefire-20230618174310882_16tmp surefire_2-20230618174310882_17tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-esig-validation-tests\target\test-classes;C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-esig-validation-tests\target\classes;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-tsl-validation\5.12.1\dss-tsl-validation-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\specs-trusted-list\5.12.1\specs-trusted-list-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\specs-xmldsig\5.12.1\specs-xmldsig-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-jaxb-common\5.12.1\dss-jaxb-common-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-alert\5.12.1\dss-alert-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\specs-xades\5.12.1\specs-xades-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-jaxb-parsers\5.12.1\dss-jaxb-parsers-5.12.1.jar;C:\Users\vasco\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.8\jaxb-runtime-2.3.8.jar;C:\Users\vasco\.m2\repository\org\glassfish\jaxb\txw2\2.3.8\txw2-2.3.8.jar;C:\Users\vasco\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\vasco\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-xades\5.12.1\dss-xades-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-test\5.12.1\dss-test-5.12.1-tests.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-document\5.12.1\dss-document-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-spi\5.12.1\dss-spi-5.12.1.jar;C:\Users\vasco\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.72\bcpkix-jdk18on-1.72.jar;C:\Users\vasco\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.72\bcutil-jdk18on-1.72.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\validation-policy\5.12.1\validation-policy-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-policy-jaxb\5.12.1\dss-policy-jaxb-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-diagnostic-jaxb\5.12.1\dss-diagnostic-jaxb-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-simple-report-jaxb\5.12.1\dss-simple-report-jaxb-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-simple-certificate-report-jaxb\5.12.1\dss-simple-certificate-report-jaxb-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-detailed-report-jaxb\5.12.1\dss-detailed-report-jaxb-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\specs-validation-report\5.12.1\specs-validation-report-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-i18n\5.12.1\dss-i18n-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-token\5.12.1\dss-token-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-model\5.12.1\dss-model-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-enumerations\5.12.1\dss-enumerations-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-service\5.12.1\dss-service-5.12.1.jar;C:\Users\vasco\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\vasco\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\vasco\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\vasco\.m2\repository\org\apache\santuario\xmlsec\2.3.3\xmlsec-2.3.3.jar;C:\Users\vasco\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\vasco\.m2\repository\com\fasterxml\woodstox\woodstox-core\6.5.0\woodstox-core-6.5.0.jar;C:\Users\vasco\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.1\stax2-api-4.2.1.jar;C:\Users\vasco\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\vasco\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.7\jcl-over-slf4j-2.0.7.jar;C:\Users\vasco\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\vasco\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.3\junit-platform-launcher-1.9.3.jar;C:\Users\vasco\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\vasco\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\vasco\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\vasco\.m2\repository\org\mockito\mockito-core\4.11.0\mockito-core-4.11.0.jar;C:\Users\vasco\.m2\repository\net\bytebuddy\byte-buddy\1.12.19\byte-buddy-1.12.19.jar;C:\Users\vasco\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar;C:\Users\vasco\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\vasco\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.15.1\jackson-module-jaxb-annotations-2.15.1.jar;C:\Users\vasco\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.1\jackson-annotations-2.15.1.jar;C:\Users\vasco\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.1\jackson-core-2.15.1.jar;C:\Users\vasco\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.1\jackson-databind-2.15.1.jar;C:\Users\vasco\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-utils-apache-commons\5.12.1\dss-utils-apache-commons-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-utils\5.12.1\dss-utils-5.12.1.jar;C:\Users\vasco\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\vasco\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\vasco\.m2\repository\commons-io\commons-io\2.12.0\commons-io-2.12.0.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-crl-parser-stream\5.12.1\dss-crl-parser-stream-5.12.1.jar;C:\Users\vasco\.m2\repository\eu\europa\ec\joinup\sd-dss\dss-crl-parser\5.12.1\dss-crl-parser-5.12.1.jar;C:\Users\vasco\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.72\bcprov-jdk18on-1.72.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\fop-core\2.8\fop-core-2.8.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-anim\1.16\batik-anim-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-css\1.16\batik-css-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-dom\1.16\batik-dom-1.16.jar;C:\Users\vasco\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-ext\1.16\batik-ext-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-parser\1.16\batik-parser-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.16\batik-shared-resources-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.16\batik-svg-dom-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-util\1.16\batik-util-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-constants\1.16\batik-constants-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.16\batik-i18n-1.16.jar;C:\Users\vasco\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.16\batik-awt-util-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.16\batik-bridge-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-script\1.16\batik-script-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-xml\1.16\batik-xml-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-extension\1.16\batik-extension-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.16\batik-gvt-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.16\batik-transcoder-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.16\batik-svggen-1.16.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\fop-events\2.8\fop-events-2.8.jar;C:\Users\vasco\.m2\repository\com\thoughtworks\qdox\qdox\1.12\qdox-1.12.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\fop-util\2.8\fop-util-2.8.jar;C:\Users\vasco\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.8\xmlgraphics-commons-2.8.jar;C:\Users\vasco\.m2\repository\ch\qos\logback\logback-classic\1.3.7\logback-classic-1.3.7.jar;C:\Users\vasco\.m2\repository\ch\qos\logback\logback-core\1.3.7\logback-core-1.3.7.jar;C:\Users\vasco\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\vasco\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\vasco\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\vasco\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\vasco\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\vasco\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\vasco\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\vasco"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-20"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-esig-validation-tests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\vasco\AppData\Local\Temp\surefire13711499927534971473\surefirebooter-20230618174310882_18.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="20.0.1+9-29"/>
+    <property name="user.name" value="vasco"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\vasco\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\vasco\AppData\Local\Temp\"/>
+    <property name="java.version" value="20.0.1"/>
+    <property name="user.dir" value="C:\Users\vasco\OneDrive\Documents\Grupo1\AP2-PD2\dss-demonstrations-5.12.1\dss-esig-validation-tests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="pt"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Maven\apache-maven-3.9.2\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\vasco\AppData\Local\Microsoft\WindowsApps;C:\Users\vasco\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vasco\AppData\Local\GitHubDesktop\bin;C:\Users\vasco\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\vasco\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="20.0.1+9-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[1]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.17">
+    <system-out><![CDATA[2023-06-18 17:43:14,387  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Online refresh is running... 
+2023-06-18 17:43:14,393  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Running analysis for 1 LOTLSource(s) 
+2023-06-18 17:43:14,811  INFO | pool-2-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:14,846  INFO | pool-2-thread-1 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:14,887  INFO | pool-2-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:14,985  INFO | pool-2-thread-1 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:15,007  INFO | pool-2-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,209  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Analysis is DONE for 1 LOTLSource(s) 
+2023-06-18 17:43:15,211  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Running analysis for 4 TLSource(s) 
+2023-06-18 17:43:15,278  INFO | pool-2-thread-3 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,278  INFO | pool-2-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,279  INFO | pool-2-thread-2 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,284  INFO | pool-2-thread-2 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:15,284  INFO | pool-2-thread-3 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:15,284  INFO | pool-2-thread-1 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:15,304  INFO | pool-2-thread-3 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,304  INFO | pool-2-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,306  INFO | pool-2-thread-2 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,331  INFO | pool-2-thread-2 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:15,331  INFO | pool-2-thread-3 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:15,341  INFO | pool-2-thread-1 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:15,347  INFO | pool-2-thread-2 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,348  INFO | pool-2-thread-3 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,355  WARN | pool-2-thread-2 | org.apache.xml.security.signature.XMLSignature          | Signature verification failed. 
+2023-06-18 17:43:15,355  WARN | pool-2-thread-2 | e.europa.esig.dss.spi.x509.SignatureIntegrityValidator  | Determining signing certificate from certificate candidates list failed: [Signature verification failed against the best candidate.] 
+2023-06-18 17:43:15,359  INFO | pool-2-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,419 ERROR | pool-2-thread-4 | eu.europa.esig.dss.tsl.runnable.AbstractAnalysis        | Unable to process GET call for url [https://eidas.ec.europa.eu/efda/api/v2/validation-tests/testcase/tl/TL-24.xml]. Reason : [Not acceptable HTTP Status (HTTP status code : 400)] 
+2023-06-18 17:43:15,419  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Analysis is DONE for 4 TLSource(s) 
+2023-06-18 17:43:15,424  WARN | main | e.e.e.d.t.sync.TrustedListCertificateSourceSynchronizer | No Parsing result for TLInfo with url [https://eidas.ec.europa.eu/efda/api/v2/validation-tests/testcase/tl/TL-24.xml] 
+2023-06-18 17:43:15,426  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Online refresh is DONE. 
+2023-06-18 17:43:15,435  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,594  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Online refresh is running... 
+2023-06-18 17:43:15,594  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Running analysis for 1 LOTLSource(s) 
+2023-06-18 17:43:15,671  INFO | pool-3-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,675  INFO | pool-3-thread-1 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:15,690  INFO | pool-3-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,704  INFO | pool-3-thread-1 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:15,711  INFO | pool-3-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,737  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Analysis is DONE for 1 LOTLSource(s) 
+2023-06-18 17:43:15,738  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Running analysis for 6 TLSource(s) 
+2023-06-18 17:43:15,780  INFO | pool-3-thread-6 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,786  INFO | pool-3-thread-6 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:15,800  INFO | pool-3-thread-6 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,813  INFO | pool-3-thread-6 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:15,825  INFO | pool-3-thread-6 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,859  INFO | pool-3-thread-5 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,868  INFO | pool-3-thread-5 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:15,877  INFO | pool-3-thread-5 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,888  INFO | pool-3-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,895  INFO | pool-3-thread-1 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:15,897  INFO | pool-3-thread-5 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:15,906  INFO | pool-3-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,910  INFO | pool-3-thread-5 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,926  INFO | pool-3-thread-1 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:15,940  INFO | pool-3-thread-3 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,940  INFO | pool-3-thread-1 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,947  INFO | pool-3-thread-3 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:15,955  INFO | pool-3-thread-3 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:15,984  INFO | pool-3-thread-3 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:15,996  INFO | pool-3-thread-3 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,012  INFO | pool-3-thread-4 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,020  INFO | pool-3-thread-4 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,029  INFO | pool-3-thread-4 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,052  INFO | pool-3-thread-4 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,060  INFO | pool-3-thread-4 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,159  INFO | pool-3-thread-2 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,165  INFO | pool-3-thread-2 | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,172  INFO | pool-3-thread-2 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,206  INFO | pool-3-thread-2 | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,212  INFO | pool-3-thread-2 | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,258  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Analysis is DONE for 6 TLSource(s) 
+2023-06-18 17:43:16,272  INFO | main | eu.europa.esig.dss.tsl.job.TLValidationJob              | Online refresh is DONE. 
+2023-06-18 17:43:16,280  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,353  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,359  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,384  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,389  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,395  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-3240C895DE157FA85F3DEF15F6CC5A5E0B3C3168AF553F33D35573CFC99E19E0 
+2023-06-18 17:43:16,395  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-3240C895DE157FA85F3DEF15F6CC5A5E0B3C3168AF553F33D35573CFC99E19E0 
+2023-06-18 17:43:16,396  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[2]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.053">
+    <system-out><![CDATA[2023-06-18 17:43:16,482  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,489  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,505  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,512  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,518  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-69D84785774D8EF71B88AFD1E8A7CD81470864876021387A3055E4454894291B 
+2023-06-18 17:43:16,519  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-69D84785774D8EF71B88AFD1E8A7CD81470864876021387A3055E4454894291B 
+2023-06-18 17:43:16,519  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[3]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.054">
+    <system-out><![CDATA[2023-06-18 17:43:16,536  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,542  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,560  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,566  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,573  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-13D44E7225F35AF978B767E10A2CF049C00F38D8007402C17F0D02B6235D1B48 
+2023-06-18 17:43:16,573  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-13D44E7225F35AF978B767E10A2CF049C00F38D8007402C17F0D02B6235D1B48 
+2023-06-18 17:43:16,573  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[4]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.049">
+    <system-out><![CDATA[2023-06-18 17:43:16,592  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,600  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,612  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,618  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,624  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[5]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.053">
+    <system-out><![CDATA[2023-06-18 17:43:16,642  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,648  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,667  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,673  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,677  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-E0BD48C106832837B1A3312540DCDFADBF696B71FF75D01B068EBF53FAE31987 
+2023-06-18 17:43:16,678  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-E0BD48C106832837B1A3312540DCDFADBF696B71FF75D01B068EBF53FAE31987 
+2023-06-18 17:43:16,678  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[6]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.067">
+    <system-out><![CDATA[2023-06-18 17:43:16,696  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,703  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,724  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,737  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,743  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-1B9CF6F105727444A0C98D54195E7F92681AAC8CF3C88300EFDF9FD71C15889E 
+2023-06-18 17:43:16,743  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-1B9CF6F105727444A0C98D54195E7F92681AAC8CF3C88300EFDF9FD71C15889E 
+2023-06-18 17:43:16,743  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[7]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.044">
+    <system-out><![CDATA[2023-06-18 17:43:16,764  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,769  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,784  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,787  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,793  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-3455B55DFD5EE96DED723AB78FCA2A2799A51E2BB44719C2D1CDB320D78738E9 
+2023-06-18 17:43:16,794  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-3455B55DFD5EE96DED723AB78FCA2A2799A51E2BB44719C2D1CDB320D78738E9 
+2023-06-18 17:43:16,794  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[8]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.131">
+    <system-out><![CDATA[2023-06-18 17:43:16,808  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,813  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,829  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,872  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,893  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:16,899  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:16,904  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:16,904  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-9F07BB517F98A968B575952FE142D082E904BFB4769B87F53DE116E8ABA7CA56 
+2023-06-18 17:43:16,904  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-9F07BB517F98A968B575952FE142D082E904BFB4769B87F53DE116E8ABA7CA56 
+2023-06-18 17:43:16,905  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[9]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.061">
+    <system-out><![CDATA[2023-06-18 17:43:16,940  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:16,945  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,962  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:16,969  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:16,975  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:16,976  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:16,983  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:16,984  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-17F2CA373A056E5EEE3EB5C1D52E58F4C2128C4FEF4809490471193460794A88 
+2023-06-18 17:43:16,984  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-17F2CA373A056E5EEE3EB5C1D52E58F4C2128C4FEF4809490471193460794A88 
+2023-06-18 17:43:16,985  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[10]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.052">
+    <system-out><![CDATA[2023-06-18 17:43:17,002  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,007  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,025  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,031  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,036  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-510DF7A655B3747E461A6353D6FD9C6C0A74509E9B7EB2D43CCCFE8ED53662B0 
+2023-06-18 17:43:17,036  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-510DF7A655B3747E461A6353D6FD9C6C0A74509E9B7EB2D43CCCFE8ED53662B0 
+2023-06-18 17:43:17,037  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[11]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.051">
+    <system-out><![CDATA[2023-06-18 17:43:17,059  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,065  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,083  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,089  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,092  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-1EF05731978477703AFCBF4C7403513C6151393D88363ADEDF5D83B9A2DB2711 
+2023-06-18 17:43:17,093  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-1EF05731978477703AFCBF4C7403513C6151393D88363ADEDF5D83B9A2DB2711 
+2023-06-18 17:43:17,093  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[12]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.058">
+    <system-out><![CDATA[2023-06-18 17:43:17,109  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,116  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,134  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,141  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,147  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-0FA106332FE280A86B101C6A8466F6E4981C985570BB41EAF8588AF119D9939C 
+2023-06-18 17:43:17,147  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-0FA106332FE280A86B101C6A8466F6E4981C985570BB41EAF8588AF119D9939C 
+2023-06-18 17:43:17,148  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[13]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.061">
+    <system-out><![CDATA[2023-06-18 17:43:17,171  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,179  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,202  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,210  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,216  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-13681EA79CC3A0FC77D85B255BBEDD5E986785CCBAD9DA3122D72A6831BFA4B8 
+2023-06-18 17:43:17,216  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-13681EA79CC3A0FC77D85B255BBEDD5E986785CCBAD9DA3122D72A6831BFA4B8 
+2023-06-18 17:43:17,216  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[14]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.088">
+    <system-out><![CDATA[2023-06-18 17:43:17,236  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,244  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,263  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,279  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,285  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,287  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:17,292  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,293  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-4844BFF93521EB4572ED37DBAD15EF2C4B1E8D7C0CB19DE9D1CBCCC21D22D337 
+2023-06-18 17:43:17,293  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-4844BFF93521EB4572ED37DBAD15EF2C4B1E8D7C0CB19DE9D1CBCCC21D22D337 
+2023-06-18 17:43:17,294  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[15]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.086">
+    <system-out><![CDATA[2023-06-18 17:43:17,324  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,333  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,357  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,366  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,371  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,372  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:17,380  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,381  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-B10FE823A6DD6DAFD5270A9828EEA7EC48A1274EB5BC16DF25662604FA9D6B44 
+2023-06-18 17:43:17,381  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-B10FE823A6DD6DAFD5270A9828EEA7EC48A1274EB5BC16DF25662604FA9D6B44 
+2023-06-18 17:43:17,381  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[16]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.058">
+    <system-out><![CDATA[2023-06-18 17:43:17,411  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,416  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,434  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,442  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,446  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,447  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:17,450  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,451  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-0DA81FD0EDFD8921CAC0BB12C1D638D69ACC630C87CC7AA294AAC16990225A14 
+2023-06-18 17:43:17,451  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-0DA81FD0EDFD8921CAC0BB12C1D638D69ACC630C87CC7AA294AAC16990225A14 
+2023-06-18 17:43:17,451  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[17]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.058">
+    <system-out><![CDATA[2023-06-18 17:43:17,470  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,476  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,494  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,507  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,510  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,511  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:17,514  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,515  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-46420AB78CC79B0DE8775938A323BF778D3DD280282B203B43784797216E7EA0 
+2023-06-18 17:43:17,515  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-46420AB78CC79B0DE8775938A323BF778D3DD280282B203B43784797216E7EA0 
+2023-06-18 17:43:17,515  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[18]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.054">
+    <system-out><![CDATA[2023-06-18 17:43:17,529  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,534  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,551  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,557  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,559  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,560  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:17,564  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,565  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-8065D6192A578005D7978604E958AE5368ADFFEB18A1140CD02C47A2B865DAD9 
+2023-06-18 17:43:17,566  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-8065D6192A578005D7978604E958AE5368ADFFEB18A1140CD02C47A2B865DAD9 
+2023-06-18 17:43:17,566  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[19]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.058">
+    <system-out><![CDATA[2023-06-18 17:43:17,585  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,590  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,606  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,614  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,618  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,619  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:17,621  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:17,622  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-3CE8E249DB1E97C69FAB1FF64E5A23D1C012FEAD0C8D0B68E6F4B50D92368B94 
+2023-06-18 17:43:17,622  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-3CE8E249DB1E97C69FAB1FF64E5A23D1C012FEAD0C8D0B68E6F4B50D92368B94 
+2023-06-18 17:43:17,622  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[20]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.058">
+    <system-out><![CDATA[2023-06-18 17:43:17,647  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,651  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,675  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,681  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,686  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-6109529B0E11442CF4DA91C2E4852429AA3D93D0849F1866E4BF13F7E361C969 
+2023-06-18 17:43:17,686  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-6109529B0E11442CF4DA91C2E4852429AA3D93D0849F1866E4BF13F7E361C969 
+2023-06-18 17:43:17,686  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[21]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.057">
+    <system-out><![CDATA[2023-06-18 17:43:17,706  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,712  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,730  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,739  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,744  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-B30849619C7D2AD01C9AB280E18FB32178DBC2F0A5EA7D1027BA6E0FF9636776 
+2023-06-18 17:43:17,745  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-B30849619C7D2AD01C9AB280E18FB32178DBC2F0A5EA7D1027BA6E0FF9636776 
+2023-06-18 17:43:17,745  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[22]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.053">
+    <system-out><![CDATA[2023-06-18 17:43:17,764  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,771  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,791  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,795  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,800  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-E71F06EDBF35D99C0B01D0DF3A59FE037E304FE946C4CFC93AF1D41C040FB73F 
+2023-06-18 17:43:17,800  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-E71F06EDBF35D99C0B01D0DF3A59FE037E304FE946C4CFC93AF1D41C040FB73F 
+2023-06-18 17:43:17,801  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[23]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.041">
+    <system-out><![CDATA[2023-06-18 17:43:17,818  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,822  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,837  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,840  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,845  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-9019D67CF896D9DE94FB4AD4DECAEE840836FD498226B77DA5DC16519D013054 
+2023-06-18 17:43:17,845  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-9019D67CF896D9DE94FB4AD4DECAEE840836FD498226B77DA5DC16519D013054 
+2023-06-18 17:43:17,845  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[24]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.042">
+    <system-out><![CDATA[2023-06-18 17:43:17,860  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,866  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,881  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,884  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,889  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-AE68DF4EE8EF2FA4CFDB7FD4A8D671FBBF9F4354CC670564EE6DE7917AE5DB66 
+2023-06-18 17:43:17,889  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-AE68DF4EE8EF2FA4CFDB7FD4A8D671FBBF9F4354CC670564EE6DE7917AE5DB66 
+2023-06-18 17:43:17,889  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[25]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.06">
+    <system-out><![CDATA[2023-06-18 17:43:17,906  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,914  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,934  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,942  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,947  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-22F26D5FDD053E83CAD170F0E32FE7145D9E85F1D6CEDA02BC9C921DE103318F 
+2023-06-18 17:43:17,948  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-22F26D5FDD053E83CAD170F0E32FE7145D9E85F1D6CEDA02BC9C921DE103318F 
+2023-06-18 17:43:17,948  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[26]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.048">
+    <system-out><![CDATA[2023-06-18 17:43:17,965  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:17,970  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:17,990  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:17,995  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,000  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-6D9EA5607FD6D55927497EE6EF83F84E959AFEFEC88B5C280F5FE6A1374E3104 
+2023-06-18 17:43:18,000  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-6D9EA5607FD6D55927497EE6EF83F84E959AFEFEC88B5C280F5FE6A1374E3104 
+2023-06-18 17:43:18,000  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[27]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.039">
+    <system-out><![CDATA[2023-06-18 17:43:18,013  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,019  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,034  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,037  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,040  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-FAEB5031F93B819B9334FD46BBECCC4429088ECB6283A2D3407899D67CCE1253 
+2023-06-18 17:43:18,040  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-FAEB5031F93B819B9334FD46BBECCC4429088ECB6283A2D3407899D67CCE1253 
+2023-06-18 17:43:18,040  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[28]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.04">
+    <system-out><![CDATA[2023-06-18 17:43:18,054  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,057  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,071  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,075  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,081  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-E121F022AB87777CE7B940ED7E75B6362207DC0BBC1896D33FDC6339068A0BD2 
+2023-06-18 17:43:18,081  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-E121F022AB87777CE7B940ED7E75B6362207DC0BBC1896D33FDC6339068A0BD2 
+2023-06-18 17:43:18,081  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[29]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.05">
+    <system-out><![CDATA[2023-06-18 17:43:18,094  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,098  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,117  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,121  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,129  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-156F65110E3CFD3DDAC4323974FC1E8A0E4E4EA7420BB10FA492FF3018BE1E7E 
+2023-06-18 17:43:18,129  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-156F65110E3CFD3DDAC4323974FC1E8A0E4E4EA7420BB10FA492FF3018BE1E7E 
+2023-06-18 17:43:18,129  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[30]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.044">
+    <system-out><![CDATA[2023-06-18 17:43:18,145  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,149  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,165  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,169  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,175  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-936DBF5A363B45AD27E6DE7FC5A371C8907E65D0DF3C8D6DBCEB2D4671B210C5 
+2023-06-18 17:43:18,175  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-936DBF5A363B45AD27E6DE7FC5A371C8907E65D0DF3C8D6DBCEB2D4671B210C5 
+2023-06-18 17:43:18,176  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[31]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.05">
+    <system-out><![CDATA[2023-06-18 17:43:18,191  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,195  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,212  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,219  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,224  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-475AB300B9A87FAB43EE00A6E517E205390EF4BD46181A12A2EB940956910464 
+2023-06-18 17:43:18,224  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-475AB300B9A87FAB43EE00A6E517E205390EF4BD46181A12A2EB940956910464 
+2023-06-18 17:43:18,225  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[32]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.038">
+    <system-out><![CDATA[2023-06-18 17:43:18,241  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,245  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,262  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,266  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,269  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-EBA240D8B8C999677AB710F65E5F320187E90BD85E797B55BF4B78DB73A85CDE 
+2023-06-18 17:43:18,269  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-EBA240D8B8C999677AB710F65E5F320187E90BD85E797B55BF4B78DB73A85CDE 
+2023-06-18 17:43:18,269  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[33]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.042">
+    <system-out><![CDATA[2023-06-18 17:43:18,281  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,284  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,301  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,305  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,309  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-D197612774BE2782C6CE1EA4BFCFD1D14489CFF10F2FF412BAE9728884BCFB22 
+2023-06-18 17:43:18,310  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-D197612774BE2782C6CE1EA4BFCFD1D14489CFF10F2FF412BAE9728884BCFB22 
+2023-06-18 17:43:18,310  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[34]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.041">
+    <system-out><![CDATA[2023-06-18 17:43:18,323  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,328  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,342  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,347  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,351  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-28488F8E4016775DD029703E172B6D1226130CABD45B7FA0CDED001D058EE8B0 
+2023-06-18 17:43:18,351  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-28488F8E4016775DD029703E172B6D1226130CABD45B7FA0CDED001D058EE8B0 
+2023-06-18 17:43:18,351  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[35]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.037">
+    <system-out><![CDATA[2023-06-18 17:43:18,364  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,367  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,384  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,388  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,391  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-8A9ADCE82B5A16B54C1734487A2936E5E5895BD40464C42D4F3F451614E9CAEF 
+2023-06-18 17:43:18,391  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-8A9ADCE82B5A16B54C1734487A2936E5E5895BD40464C42D4F3F451614E9CAEF 
+2023-06-18 17:43:18,391  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[36]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.042">
+    <system-out><![CDATA[2023-06-18 17:43:18,403  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,407  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,423  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,427  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,431  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-19D059B3CFED3AD66D631927B0816379C3AE7B243A804CFA4D405029188992C9 
+2023-06-18 17:43:18,431  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-19D059B3CFED3AD66D631927B0816379C3AE7B243A804CFA4D405029188992C9 
+2023-06-18 17:43:18,431  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[37]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.053">
+    <system-out><![CDATA[2023-06-18 17:43:18,447  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,454  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,473  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,480  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,485  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-DB7FE04DAEC6B2F4315967A453F9F86E433C39D840D1C325C9B9F5C0AA3A3618 
+2023-06-18 17:43:18,485  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-DB7FE04DAEC6B2F4315967A453F9F86E433C39D840D1C325C9B9F5C0AA3A3618 
+2023-06-18 17:43:18,485  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[38]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.076">
+    <system-out><![CDATA[2023-06-18 17:43:18,502  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,508  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,543  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,551  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,556  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-9067E6EB9691F1520C840F815BA0E307EECBFBF77DC060A48D2F36E9DC6225EC 
+2023-06-18 17:43:18,556  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-9067E6EB9691F1520C840F815BA0E307EECBFBF77DC060A48D2F36E9DC6225EC 
+2023-06-18 17:43:18,556  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[39]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.062">
+    <system-out><![CDATA[2023-06-18 17:43:18,580  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,587  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,614  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,619  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,625  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-B4D376AC05D56261B30292FCA41D644B4B198230965CF4B6ACC6A8993873BF57 
+2023-06-18 17:43:18,625  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-B4D376AC05D56261B30292FCA41D644B4B198230965CF4B6ACC6A8993873BF57 
+2023-06-18 17:43:18,626  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[40]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.056">
+    <system-out><![CDATA[2023-06-18 17:43:18,644  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,649  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,671  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,677  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,682  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-C53B417968482090E5F599D645EFDBBD087A279A4889BF34F0E8E4D6B3CAD399 
+2023-06-18 17:43:18,683  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-C53B417968482090E5F599D645EFDBBD087A279A4889BF34F0E8E4D6B3CAD399 
+2023-06-18 17:43:18,683  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[41]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.065">
+    <system-out><![CDATA[2023-06-18 17:43:18,703  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,713  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,733  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,739  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,745  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-DD5F0B19013F5BA5E12C50C83C7BD8F629C80E9EEA39A17214852830F69E132C 
+2023-06-18 17:43:18,746  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-DD5F0B19013F5BA5E12C50C83C7BD8F629C80E9EEA39A17214852830F69E132C 
+2023-06-18 17:43:18,746  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[42]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.08">
+    <system-out><![CDATA[2023-06-18 17:43:18,772  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,784  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,812  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,818  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,824  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-86DA9F87D3072E0F7617F895395F33A1D353C6E7FE4728E514EB972F9D414C7D 
+2023-06-18 17:43:18,824  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-86DA9F87D3072E0F7617F895395F33A1D353C6E7FE4728E514EB972F9D414C7D 
+2023-06-18 17:43:18,824  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[43]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.065">
+    <system-out><![CDATA[2023-06-18 17:43:18,851  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,857  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,884  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,891  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,896  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-14F2151F9D0F5211A5577D7F5149BC394D6EE6CD2284880D999927BDECF90B25 
+2023-06-18 17:43:18,897  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-14F2151F9D0F5211A5577D7F5149BC394D6EE6CD2284880D999927BDECF90B25 
+2023-06-18 17:43:18,897  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[44]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.039">
+    <system-out><![CDATA[2023-06-18 17:43:18,917  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,920  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,935  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,939  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,942  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-3D99EB8A1441AC89C2923F0B0BC42CA3B2902A2CBF4E50C6B57B646BC35CE542 
+2023-06-18 17:43:18,942  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-3D99EB8A1441AC89C2923F0B0BC42CA3B2902A2CBF4E50C6B57B646BC35CE542 
+2023-06-18 17:43:18,942  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[45]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.04">
+    <system-out><![CDATA[2023-06-18 17:43:18,957  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:18,961  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,976  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:18,980  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:18,985  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-11C497F73FF50E4F1E633F68F12CF3E54BAEDB9E38D665C262F9D38130B88584 
+2023-06-18 17:43:18,985  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-11C497F73FF50E4F1E633F68F12CF3E54BAEDB9E38D665C262F9D38130B88584 
+2023-06-18 17:43:18,985  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[46]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.055">
+    <system-out><![CDATA[2023-06-18 17:43:18,997  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,001  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,019  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,036  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,040  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-538072ADE5F7891F4DBDC2E27FA2E40E363FF7507E08FF2D9648061E4C8E2BD5 
+2023-06-18 17:43:19,041  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-538072ADE5F7891F4DBDC2E27FA2E40E363FF7507E08FF2D9648061E4C8E2BD5 
+2023-06-18 17:43:19,041  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[47]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.036">
+    <system-out><![CDATA[2023-06-18 17:43:19,053  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,060  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,074  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,076  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,080  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-11C08848D5805ED75271422B55ED0F2955EC56442D1EC0A6D6BA52BA69CDB40C 
+2023-06-18 17:43:19,080  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-11C08848D5805ED75271422B55ED0F2955EC56442D1EC0A6D6BA52BA69CDB40C 
+2023-06-18 17:43:19,080  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[48]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.033">
+    <system-out><![CDATA[2023-06-18 17:43:19,090  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,093  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,107  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,111  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,113  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-83E4091DCCD46E31DF74129E94B4E8FFE098181EE3EA491F9741372DB50FEA17 
+2023-06-18 17:43:19,114  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-83E4091DCCD46E31DF74129E94B4E8FFE098181EE3EA491F9741372DB50FEA17 
+2023-06-18 17:43:19,114  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[49]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.033">
+    <system-out><![CDATA[2023-06-18 17:43:19,124  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,127  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,141  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,144  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,148  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-6D8DA98B4A9108D85E27D4ECFAE451A22F38FF5F9AC156DF397B8DFF9EFF4B35 
+2023-06-18 17:43:19,148  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-6D8DA98B4A9108D85E27D4ECFAE451A22F38FF5F9AC156DF397B8DFF9EFF4B35 
+2023-06-18 17:43:19,148  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[50]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.038">
+    <system-out><![CDATA[2023-06-18 17:43:19,158  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,162  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,175  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,179  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,182  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-A930492B65360ABA217FD740839B8AEA957D6834CB95BC9FEA0AAE2599D2F4 
+2023-06-18 17:43:19,183  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-A930492B65360ABA217FD740839B8AEA957D6834CB95BC9FEA0AAE2599D2F4 
+2023-06-18 17:43:19,183  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[51]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.044">
+    <system-out><![CDATA[2023-06-18 17:43:19,199  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,203  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,219  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,223  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,228  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-4BA2227BD1CA7F56155CD10DCDBE5AF151AACA0AEC78F8A90DA42BA85C8DBB6D 
+2023-06-18 17:43:19,228  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-4BA2227BD1CA7F56155CD10DCDBE5AF151AACA0AEC78F8A90DA42BA85C8DBB6D 
+2023-06-18 17:43:19,228  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[52]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.037">
+    <system-out><![CDATA[2023-06-18 17:43:19,243  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,246  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,263  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,266  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,269  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-4B2C186B1DC18B73775DC9F822DD0ABBAC356DFC85DF854162739F868231291D 
+2023-06-18 17:43:19,269  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-4B2C186B1DC18B73775DC9F822DD0ABBAC356DFC85DF854162739F868231291D 
+2023-06-18 17:43:19,269  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[53]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.041">
+    <system-out><![CDATA[2023-06-18 17:43:19,282  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,287  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,300  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,305  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,309  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-1DC6AF6FE59C661AB8361D5912ECF08355C22C20A5D16FE9BA20F99C7BC0D875 
+2023-06-18 17:43:19,309  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-1DC6AF6FE59C661AB8361D5912ECF08355C22C20A5D16FE9BA20F99C7BC0D875 
+2023-06-18 17:43:19,309  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[54]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.039">
+    <system-out><![CDATA[2023-06-18 17:43:19,323  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,327  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,343  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,347  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,350  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-930B401A7DB0E23D57C92CD6AEA5481915D5E28BC834206FCA78C239CDF9000C 
+2023-06-18 17:43:19,350  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-930B401A7DB0E23D57C92CD6AEA5481915D5E28BC834206FCA78C239CDF9000C 
+2023-06-18 17:43:19,350  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[55]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.039">
+    <system-out><![CDATA[2023-06-18 17:43:19,362  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,366  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,380  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,385  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,388  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-6C3BD0C59C226DC8E4B1C839197A7646A2E6166AE6A07EA3466B1FB11CCD59A0 
+2023-06-18 17:43:19,388  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-6C3BD0C59C226DC8E4B1C839197A7646A2E6166AE6A07EA3466B1FB11CCD59A0 
+2023-06-18 17:43:19,388  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[56]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.039">
+    <system-out><![CDATA[2023-06-18 17:43:19,403  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,406  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,423  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,428  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,431  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-2D44C9FAD22C154F5F142857AF8D0785351265B8CC892CFDA2E30CD1777C9E51 
+2023-06-18 17:43:19,431  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-2D44C9FAD22C154F5F142857AF8D0785351265B8CC892CFDA2E30CD1777C9E51 
+2023-06-18 17:43:19,431  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[57]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.04">
+    <system-out><![CDATA[2023-06-18 17:43:19,444  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,449  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,464  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,467  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,470  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-EBFE6756DC1DEC3B9748B348CF9B2A25F2F72C1FDA8EEE058A3A185111B456B5 
+2023-06-18 17:43:19,471  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-EBFE6756DC1DEC3B9748B348CF9B2A25F2F72C1FDA8EEE058A3A185111B456B5 
+2023-06-18 17:43:19,471  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[58]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.036">
+    <system-out><![CDATA[2023-06-18 17:43:19,485  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,488  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,503  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,506  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,510  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-235F23D0CDA5018DEF27E8A76A10DF8A6B16D78810EDF69EB195AA2C649C061A 
+2023-06-18 17:43:19,510  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-235F23D0CDA5018DEF27E8A76A10DF8A6B16D78810EDF69EB195AA2C649C061A 
+2023-06-18 17:43:19,510  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[59]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.029">
+    <system-out><![CDATA[2023-06-18 17:43:19,521  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,523  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,536  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,539  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,542  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-C6F7F08A7D681C9DF9580EF7B99E38B61F77BF84D15351E4C91081D8343C1F57 
+2023-06-18 17:43:19,542  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-C6F7F08A7D681C9DF9580EF7B99E38B61F77BF84D15351E4C91081D8343C1F57 
+2023-06-18 17:43:19,542  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[60]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.032">
+    <system-out><![CDATA[2023-06-18 17:43:19,552  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,555  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,569  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,572  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,574  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-BBF9BEF64D0C55CD9CC1AF9337599325B2834752BD326A99A04700404618A0A0 
+2023-06-18 17:43:19,574  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-BBF9BEF64D0C55CD9CC1AF9337599325B2834752BD326A99A04700404618A0A0 
+2023-06-18 17:43:19,575  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[61]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.032">
+    <system-out><![CDATA[2023-06-18 17:43:19,585  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,588  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,601  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,604  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,607  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-11184A56D9EC89FBDDF2B24FD08AE9C61592D1C6A7080C3BC3CFBC791B0C8400 
+2023-06-18 17:43:19,607  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-11184A56D9EC89FBDDF2B24FD08AE9C61592D1C6A7080C3BC3CFBC791B0C8400 
+2023-06-18 17:43:19,607  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[62]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.032">
+    <system-out><![CDATA[2023-06-18 17:43:19,617  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,620  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,634  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,637  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,639  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-35FB2EE9B79B920A107E84D95C596EB289EF3F9D71A5B80CEEC0FD3370A8E08D 
+2023-06-18 17:43:19,640  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-35FB2EE9B79B920A107E84D95C596EB289EF3F9D71A5B80CEEC0FD3370A8E08D 
+2023-06-18 17:43:19,640  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[63]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.033">
+    <system-out><![CDATA[2023-06-18 17:43:19,650  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,654  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,667  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,671  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,674  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-3B8B45E14CDBC9BE8FACF2A0528799F3D829339758A94E47873142D380BC2B97 
+2023-06-18 17:43:19,674  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-3B8B45E14CDBC9BE8FACF2A0528799F3D829339758A94E47873142D380BC2B97 
+2023-06-18 17:43:19,674  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[64]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.034">
+    <system-out><![CDATA[2023-06-18 17:43:19,685  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,688  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,702  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,707  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,709  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-0E736FEBB6B3C2BFD6304423DDE329FCFFF766B0EA2D87858CD840A0FA07728B 
+2023-06-18 17:43:19,710  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-0E736FEBB6B3C2BFD6304423DDE329FCFFF766B0EA2D87858CD840A0FA07728B 
+2023-06-18 17:43:19,710  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[65]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.036">
+    <system-out><![CDATA[2023-06-18 17:43:19,720  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,723  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,738  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,742  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,745  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-B0C104B2BB12470E688AB47104DD403883F68B248839414680B7C9CB875B927F 
+2023-06-18 17:43:19,745  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-B0C104B2BB12470E688AB47104DD403883F68B248839414680B7C9CB875B927F 
+2023-06-18 17:43:19,745  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[66]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.041">
+    <system-out><![CDATA[2023-06-18 17:43:19,758  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,761  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,784  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,788  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,790  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-1B764AA71A7AAA1DC3A8BB002E2006001B3A9D444602B328C53B1D835E6A401B 
+2023-06-18 17:43:19,790  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-1B764AA71A7AAA1DC3A8BB002E2006001B3A9D444602B328C53B1D835E6A401B 
+2023-06-18 17:43:19,790  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[67]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.043">
+    <system-out><![CDATA[2023-06-18 17:43:19,799  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,802  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,818  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,822  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,826  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:19,827  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:19,829  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:19,830  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-D8FB650A4EFFAAFCA7960B4C3305C259B6539A3AD59B36C2FCAA250B14F31A2F 
+2023-06-18 17:43:19,830  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-D8FB650A4EFFAAFCA7960B4C3305C259B6539A3AD59B36C2FCAA250B14F31A2F 
+2023-06-18 17:43:19,830  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[68]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.046">
+    <system-out><![CDATA[2023-06-18 17:43:19,843  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,847  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,861  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,866  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,871  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:19,872  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:19,874  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:19,876  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-E5AF665E02F3C4A72C81C06DD42E251A0BA4F4918A089FC43EA62CB25E6C082B 
+2023-06-18 17:43:19,876  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-E5AF665E02F3C4A72C81C06DD42E251A0BA4F4918A089FC43EA62CB25E6C082B 
+2023-06-18 17:43:19,876  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[69]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.043">
+    <system-out><![CDATA[2023-06-18 17:43:19,891  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,895  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,913  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,919  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,922  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-65523197136BEC160162FEA5F994DEEC46DAF870EC8AA283258E5AA10470ECA2 
+2023-06-18 17:43:19,922  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-65523197136BEC160162FEA5F994DEEC46DAF870EC8AA283258E5AA10470ECA2 
+2023-06-18 17:43:19,923  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[70]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.04">
+    <system-out><![CDATA[2023-06-18 17:43:19,935  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,940  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,955  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:19,958  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,961  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-4A8152C1CEF27DA8F8B8CEEE6E6354C95286416977333903444457FEF4EFDA03 
+2023-06-18 17:43:19,961  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-4A8152C1CEF27DA8F8B8CEEE6E6354C95286416977333903444457FEF4EFDA03 
+2023-06-18 17:43:19,961  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[71]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.041">
+    <system-out><![CDATA[2023-06-18 17:43:19,977  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:19,982  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:19,998  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,002  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,005  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-AE59B58FAB173E31318417D47BE218C2FD9159FCD83307D6B3445629474933EC 
+2023-06-18 17:43:20,005  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-AE59B58FAB173E31318417D47BE218C2FD9159FCD83307D6B3445629474933EC 
+2023-06-18 17:43:20,005  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[72]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.033">
+    <system-out><![CDATA[2023-06-18 17:43:20,018  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,022  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,037  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,040  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,043  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-B5D8167E39441FE7E3E2A84A5B290177A6E7E291C3619EA8E7A3080EC1035341 
+2023-06-18 17:43:20,043  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-B5D8167E39441FE7E3E2A84A5B290177A6E7E291C3619EA8E7A3080EC1035341 
+2023-06-18 17:43:20,043  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[73]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.045">
+    <system-out><![CDATA[2023-06-18 17:43:20,052  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,058  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,076  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,081  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,084  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:20,085  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:20,088  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:20,088  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-427FCAA7566E459C1666DE566429BED4FF920703284764562AFAA73D170B61D3 
+2023-06-18 17:43:20,089  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-427FCAA7566E459C1666DE566429BED4FF920703284764562AFAA73D170B61D3 
+2023-06-18 17:43:20,089  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[74]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.035">
+    <system-out><![CDATA[2023-06-18 17:43:20,099  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,102  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,116  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,120  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,124  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-E269469420EDE635515C4CB93838D4234F2AF348FA33264410CBEF78474672C6 
+2023-06-18 17:43:20,124  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-E269469420EDE635515C4CB93838D4234F2AF348FA33264410CBEF78474672C6 
+2023-06-18 17:43:20,124  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[75]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.04">
+    <system-out><![CDATA[2023-06-18 17:43:20,137  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,140  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,158  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,162  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,165  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-0B8A4B11C1F4E2D20367F737BCD8F2650D61AB71C20DC2844A506314159EE380 
+2023-06-18 17:43:20,165  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-0B8A4B11C1F4E2D20367F737BCD8F2650D61AB71C20DC2844A506314159EE380 
+2023-06-18 17:43:20,165  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[76]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.043">
+    <system-out><![CDATA[2023-06-18 17:43:20,178  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,184  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,198  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,204  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,207  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:20,208  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:20,210  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:20,211  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-20446CE052830738156A906081C6B73065825D2E74FAE32B3F7A9515830F23FD 
+2023-06-18 17:43:20,211  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-20446CE052830738156A906081C6B73065825D2E74FAE32B3F7A9515830F23FD 
+2023-06-18 17:43:20,211  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[77]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.032">
+    <system-out><![CDATA[2023-06-18 17:43:20,220  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,225  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,239  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,242  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,245  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-FF8B8454914C08A28917AF35185B1876766FD2451DAA07258741865B5AA38982 
+2023-06-18 17:43:20,245  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-FF8B8454914C08A28917AF35185B1876766FD2451DAA07258741865B5AA38982 
+2023-06-18 17:43:20,245  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[78]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.032">
+    <system-out><![CDATA[2023-06-18 17:43:20,256  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,260  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,272  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,275  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,278  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-4487D61F6A6A386E0C91399F1B4AE522E1D85A2E4C3A8F31D780CE881E478FE9 
+2023-06-18 17:43:20,278  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-4487D61F6A6A386E0C91399F1B4AE522E1D85A2E4C3A8F31D780CE881E478FE9 
+2023-06-18 17:43:20,278  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[79]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.032">
+    <system-out><![CDATA[2023-06-18 17:43:20,287  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,290  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,304  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,308  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,310  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-1A3D75F7EA26DFB6B5E3DA0720FB4491227F6768080746B2AD055B7ED9324DA4 
+2023-06-18 17:43:20,310  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-1A3D75F7EA26DFB6B5E3DA0720FB4491227F6768080746B2AD055B7ED9324DA4 
+2023-06-18 17:43:20,310  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[80]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.038">
+    <system-out><![CDATA[2023-06-18 17:43:20,320  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,323  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,336  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,341  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,344  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-6A17F6A925D84B69876D9DA0371B3419F301A4E17136F12A56F1B3A100BEE4BC 
+2023-06-18 17:43:20,344  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-6A17F6A925D84B69876D9DA0371B3419F301A4E17136F12A56F1B3A100BEE4BC 
+2023-06-18 17:43:20,344  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[81]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.044">
+    <system-out><![CDATA[2023-06-18 17:43:20,358  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,361  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,383  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,388  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,391  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-87F62026C735373C9C635F6FEF6F06D900A6040A82AFDD7EFD05C69BE080181A 
+2023-06-18 17:43:20,391  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-87F62026C735373C9C635F6FEF6F06D900A6040A82AFDD7EFD05C69BE080181A 
+2023-06-18 17:43:20,392  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[82]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.039">
+    <system-out><![CDATA[2023-06-18 17:43:20,404  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,408  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,425  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,429  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,432  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-7D9C431203325791E54E179E26B917D3086DA8A5279CD291D2492BB173DD8085 
+2023-06-18 17:43:20,432  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-7D9C431203325791E54E179E26B917D3086DA8A5279CD291D2492BB173DD8085 
+2023-06-18 17:43:20,432  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[83]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.044">
+    <system-out><![CDATA[2023-06-18 17:43:20,443  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,447  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,466  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,470  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,473  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:20,474  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:20,476  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:20,477  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-88EB764CBC5BC189E909E98AD5ABEFEAE66B9EFE445856A517F175CF87FB074F 
+2023-06-18 17:43:20,477  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-88EB764CBC5BC189E909E98AD5ABEFEAE66B9EFE445856A517F175CF87FB074F 
+2023-06-18 17:43:20,477  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[84]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.03">
+    <system-out><![CDATA[2023-06-18 17:43:20,486  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,490  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,503  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,507  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,510  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-A6444EDE80F2C2BF85DC7C1943CFAB6C9C1AB28EC04D9E46848815B14E0EAD9F 
+2023-06-18 17:43:20,510  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-A6444EDE80F2C2BF85DC7C1943CFAB6C9C1AB28EC04D9E46848815B14E0EAD9F 
+2023-06-18 17:43:20,510  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[85]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.04">
+    <system-out><![CDATA[2023-06-18 17:43:20,516  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,520  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,533  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,539  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,542  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:20,542  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No Timestamp Certificate found. Chain is skipped. 
+2023-06-18 17:43:20,545  WARN | main | eu.europa.esig.dss.validation.timestamp.TimestampToken  | Unable to validate timestamp token : certificate hash does not match certID hash. 
+2023-06-18 17:43:20,545  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-CA8B902A83CC63AD5C1418DA99125370375B380A35473A138155D969BA11DC64 
+2023-06-18 17:43:20,545  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-CA8B902A83CC63AD5C1418DA99125370375B380A35473A138155D969BA11DC64 
+2023-06-18 17:43:20,546  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[86]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.033">
+    <system-out><![CDATA[2023-06-18 17:43:20,559  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,562  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,576  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,578  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,580  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-D2B011D8158DF4CC4571DD67FB7BCB84523879C83548793FADD04F12164684AB 
+2023-06-18 17:43:20,580  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-D2B011D8158DF4CC4571DD67FB7BCB84523879C83548793FADD04F12164684AB 
+2023-06-18 17:43:20,580  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[87]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.035">
+    <system-out><![CDATA[2023-06-18 17:43:20,593  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,597  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,610  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,614  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,617  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-A20D606D5983B7CBFDE765D6F8F63CEF91BC4B4B9012FFED183046E376849E25 
+2023-06-18 17:43:20,617  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-A20D606D5983B7CBFDE765D6F8F63CEF91BC4B4B9012FFED183046E376849E25 
+2023-06-18 17:43:20,617  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[88]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.035">
+    <system-out><![CDATA[2023-06-18 17:43:20,632  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,636  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,652  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,655  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,657  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-4811927138B4DCEDB7A260591C465011B4A62B7349485AC93BC122BB31B7FF90 
+2023-06-18 17:43:20,657  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-4811927138B4DCEDB7A260591C465011B4A62B7349485AC93BC122BB31B7FF90 
+2023-06-18 17:43:20,657  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[89]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.032">
+    <system-out><![CDATA[2023-06-18 17:43:20,666  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,669  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,682  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,685  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,687  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-BDF941FC730962CBEA4E797854E077D16201141B96C82FF93C1E5CF03FA4E6F6 
+2023-06-18 17:43:20,688  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-BDF941FC730962CBEA4E797854E077D16201141B96C82FF93C1E5CF03FA4E6F6 
+2023-06-18 17:43:20,688  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[90]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.034">
+    <system-out><![CDATA[2023-06-18 17:43:20,699  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,702  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,717  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,720  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,723  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-B0E5EE5E09688D6E254DC9CE902862B7037BD5ABF41B26AA1A716D2671E51367 
+2023-06-18 17:43:20,723  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-B0E5EE5E09688D6E254DC9CE902862B7037BD5ABF41B26AA1A716D2671E51367 
+2023-06-18 17:43:20,723  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[91]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.035">
+    <system-out><![CDATA[2023-06-18 17:43:20,734  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,740  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,756  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,759  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,761  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-F77C789BD228C7225D0EFD925E01CF151E6E0E3CBF7EB95687E53653663B3F7C 
+2023-06-18 17:43:20,761  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-F77C789BD228C7225D0EFD925E01CF151E6E0E3CBF7EB95687E53653663B3F7C 
+2023-06-18 17:43:20,761  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+  <testcase name="test(DSSDocument, String, CertificateVerifier)[92]" classname="eu.europa.esig.dss.validation.EsigValidationTest" time="0.032">
+    <system-out><![CDATA[2023-06-18 17:43:20,770  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Document validation... 
+2023-06-18 17:43:20,773  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,785  INFO | main | e.e.esig.dss.xades.validation.XAdESCertificateSource    | +XAdESCertificateSource 
+2023-06-18 17:43:20,789  INFO | main | e.europa.esig.dss.validation.CommonCertificateVerifier  | + New CommonCertificateVerifier created. 
+2023-06-18 17:43:20,791  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | External revocation check is skipped for untrusted certificate : C-848167345B4B8C0999B5DBDF98424C30BCF91BA60FBBFCFE48398AC1CAAC0931 
+2023-06-18 17:43:20,791  WARN | main | e.europa.esig.dss.validation.SignatureValidationContext | No revocation found for the certificate C-848167345B4B8C0999B5DBDF98424C30BCF91BA60FBBFCFE48398AC1CAAC0931 
+2023-06-18 17:43:20,793  INFO | main | eu.europa.esig.dss.validation.SignedDocumentValidator   | Default SignaturePolicyProvider instantiated with NativeHTTPDataLoader. 
+]]></system-out>
+  </testcase>
+</testsuite>
